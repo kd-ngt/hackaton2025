@@ -1,14 +1,44 @@
-*.pyc
+# Python
 __pycache__/
-.env
-.venv
-env/
+*.py[cod]
+*$py.class
+*.so
+.Python
 venv/
-.DS_Store
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_meta
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Data files
 data/raw/*
 data/processed/*
-models/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# Model files
+models/*
 !models/.gitkeep
-notebooks/
+
+# Logs
+logs/
+*.log
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# OS specific
+.DS_Store
+Thumbs.db
