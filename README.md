@@ -24,7 +24,6 @@ hackaton2025/
 └── tests/             # Unit tests
 ```
 
-
 ## Cases
 [Beskrivelse af de tre cases og deres specifikke tekniske krav/fokusområder]
 
@@ -77,18 +76,65 @@ except Exception as e:
 ## Setup Guide
 
 ### 1. Klargøring af Udviklingsmiljø
-```bash
-# Clone repository
-git clone https://github.com/[organization]/hackaton2025.git
-cd hackaton2025
 
+Der er to måder at sætte udviklingsmiljøet op på:
+
+#### Anbefalet: Brug af uv (hurtigere og mere effektiv)
+```bash
+# Installer uv (kun hvis ikke installeret på forhånd)
+# med pip (både windows og macOS / Linux)
+pip install uv 
+
+# Uden pip
+# På windows:
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/0.5.21/install.ps1 | iex"
+
+# På macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Opret og aktiver virtuelt miljø
+uv venv
+# På Windows:
+.venv\Scripts\activate
+# På Linux/Mac:
+source .venv/bin/activate
+```
+
+#### Alternativ: Traditionel venv
+```bash
 # Opret virtual environment
 python -m venv venv
-source venv/bin/activate  # På Windows: venv\Scripts\activate
 
-# Installer dependencies baseret på jeres case behov
-pip install -r requirements.txt  # Opret denne fil baseret på jeres case
+# Aktiver miljøet
+# På Windows:
+venv\Scripts\activate
+# På Linux/Mac:
+source venv/bin/activate
 ```
+
+### 2. Team Branches
+For at sikre at hvert team arbejder i deres egen branch, skal I følge disse trin:
+
+```bash
+# 1. Klon main branch
+git clone https://github.com/kd-ngt/hackaton2025
+cd hackaton2025
+
+# 2. Skift til jeres team branch
+# For Team A:
+git checkout teamA
+
+# For Team B:
+git checkout teamB
+
+# For Team C:
+git checkout teamC
+```
+
+Bemærk:
+- Sørg for at være i den rigtige team branch før I begynder at kode
+- Commit og push jeres ændringer regelmæssigt til jeres team branch
+- Undgå at pushe direkte til main branch
 
 ## Eksperter & Mentorer
 [Information om tilgængelige eksperter og mentorer fra både NGT og EY]
@@ -97,7 +143,20 @@ pip install -r requirements.txt  # Opret denne fil baseret på jeres case
 [Beskriv hvordan løsningerne skal præsenteres og evalueres]
 
 ## Kontakt
-[Kontaktinformation til relevante kontaktpersoner fra både NGT og EY]
+#### NGT
+- Nicki Lentz
+  - Email: nilen@regionsjaelland.dk
+  - Tlf: +45 21 22 04 48
+
+- Caroline Ostenfeldt
+  - Email: coste@regionsjaelland.dk
+  - Tlf: +45 20 59 92 91
+
+#### EY
+- Philip Theut Stehr-Nielsen
+  - Email: philip.theut@dk.ey.com
+  - Tlf: +45 25 29 37 23
+
 
 ## Next Steps
 [Information om hvad der sker efter hackathon'et, opfølgning, implementering etc.]
