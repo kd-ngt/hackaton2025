@@ -29,6 +29,15 @@ hackaton2025/
 
 ## Tekniske Krav
 
+### Discord adgang
+Der er oprettet en discord server som alle kan tilgå for at kommunikere nemt.
+Man kan enden downloade discord som app eller tilgå den via web browseren på følgende link:
+
+https://discord.gg/KVjaE9tA
+
+Der er 2 overordnet kanaler: Tekstkanaler og Talekanaler.
+Der en generelt kategori som er for alle, og så er der team specifikke man kan tilgå.
+
 ### Tilgængelige Modeller
 https://app.requesty.ai/ er en router til mere end 100 forskellige sprog modeller. Heriblandt til GPT-4, Claude Sonnet 3.5, DeepSeek, Qwen2.5, llama mm.
 
