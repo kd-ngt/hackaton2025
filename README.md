@@ -1,6 +1,6 @@
 # NGT/EY Hackathon 2025
 
-## Om Hackaton'et
+## Om Hackatonet
 [Kort introduktion til hackathon'et og samarbejdet mellem NGT og EY. Beskriv overordnet format med 3 cases og 3 teams]
 
 ## Format
